@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DC PAGE </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top 
+                    }, 800, function(){
+                        window.location.hash = hash;
+                 });
+                }
+             });
+            });
+    </script>
+
+</head>
+<body>
+    <div class="banner"id= "home">
+
+        <div class="navbar">
+                <div class="logo">DC Entertainment</div>
+                <ul>
+                    <li><a href="#home">HOME </a></li>
+                    <li><a href="#news">NEWS </a></li>
+                    <li><a href="#about">ABOUT DC </a></li>
+                    <li><a href="#gallery">CHARACTERS </a></li>
+                    <li><a href="#production">PRODUCTION COMPANY</a></li>
+                </ul>
+        </div>
+    <div class="content">
+        <h1 class="glow" >WELCOME TO DC COMICS </h1>
+        <p>DC Comics is one of the largest and oldest American comic book companies</p>
+
+        <div class="buttons">
+            <button type="button"><span></span>READ MORE</button>
+            <button type="button"><span></span>WATCH MORE</button>
+        </div>
+    </div>
+    </div>
+
+
+     <!--this codes is for home page-->
+
+     <div class="blog-section" id="news">
+        <div class="section-content">
+            <div class="title">
+                <h2> DC Comics</h2>
+                <p>  American comic book publisher and the flagship unit of DC Entertainment</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                    <img src="img/n1.gif">
+                </div>
+
+                <div class="article">
+                    <h4> Superman</h4>
+                    <p>Superhuman strength, super speed, stamina and invulnerability, 
+                        freezing breath, super hearing, 
+                        multiple extrasensory and vision powers, longevity, flight, and regeneration.</br></br>
+
+                        Superman is a fictional character and one of the most
+                         famous and popular comic book superheroes of all time.</p>
+                </div>
+                <div class="blog-view">
+                    <a href="" class="button">Read More</a>
+                </div>
+
+                <div class="posted-date">
+                    <p>Date Posted: April 18, 1938</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="img/n2.gif">
+                </div>
+
+                <div class="article">
+                    <h4> Wonder Woman</h4>
+                    <p>Wonder Woman is a compassionate caring, stubborn, 
+                        opinionated, highly competitive, outgoing, immortal Amazon.</br></br>
+
+                        Wonder Woman is a warrior born. She tries to avoid conflict but if pressed she 
+                        will engage in battle and on occasion lose herself in the pleasure of battle.</p>
+                </div>
+
+                <div class="blog-view">
+                    <a href="" class="button">Read More</a>
+                </div>
+
+                <div class="posted-date">
+                    <p>Date Posted: October 1941</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="img/n3.gif">
+                </div>
+
+                <div class="article">
+                    <h4> Batman</h4>
+                    <p>Batman was originally introduced as a ruthless vigilante who frequently killed or maimed 
+                        criminals, but evolved into 
+                        a character with a stringent moral code and strong sense of justice.</br></br>
+
+                        Unlike most superheroes, Batman does not possess any 
+                        superpowers, instead relying on his intellect, fighting skills, and wealth.</p>
+                </div>
+
+                <div class="blog-view">
+                    <a href="" class="button">Read More</a>
+                </div>
+
+                <div class="posted-date">
+                    <p>Date Posted: May 1939</p>
+                </div>
+            </div>
+         </div>
+        
+
+        </div>
+    </div>
+
+    <!---this code is for about page-->
+
+    <div class="about-section" id="about">
+        <div class="heading">
+            <h1>About Us</h1>
+            <p>About DC Comics</p>
+        </div>
+
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="img/dc.jpeg">
+                </div>
+
+                <div class="about-content">
+
+                <h2>DC</h2>
+                <p>DC Comics, Inc.  is an American comic
+                     book publisher and the flagship unit of DC Entertainment,
+                      a subsidiary of Warner Bros. Discovery. DC Comics, Inc. DC Comics is one 
+                      of the largest and oldest American comic book 
+                    companies, with their first comic under the DC banner being published in 1937</p>
+
+                <a href="#"class="read-more">Read More</a>
+                </div>
+                
+            </section>
+        </div>
+    </div>
+    
+    <!--Gallery Page-->
+
+    <div class="gallery" id="gallery">
+
+        <input type="radio" name="photos" id="check1" checked>
+        <input type="radio" name="photos" id="check2">
+        <input type="radio" name="photos" id="check3">
+        <input type="radio" name="photos" id="check4">
+
+        <div class="gallery-container">
+            <h1>List of Characters</h1>
+            <div class="top-content">
+                <h3>Photo Gallery</h3>
+                <label for="check1">All photos</label>
+                <label for="check2">Characters1</label>
+                <label for="check3">Characters2</label>
+                <label for="check4">Characters3</label>
+            </div>
+
+            <div class="photo-gallery">
+                <div class="pic Events">
+                    <img src="img/superman.gif">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/batman.gif">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/w.gif">
+                </div>
+
+                <div class="pic Events">
+                    <img src="img/darksied.gif">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/dr fate.gif">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/aquaman.gif">
+                </div>
+
+                <div class="pic Events">
+                    <img src="img/stepen.gif">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/flash.gif">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/marshian.gif">
+                </div>
+
+                <div class="pic Events">
+                    <img src="img/black adam.gif">
+                </div>
+
+                <div class="pic Bonding">
+                    <img src="img/hawkman.gif">
+                </div>
+
+                <div class="pic Outing">
+                    <img src="img/cyclone.gif">
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Testimony Page-->
+
+    <div class="wrapper" id="production"> 
+        <h1> PRODUCTION</h1>
+        <h5></h5>
+
+        <div class="pers">
+            <div class="per">
+                <img src="img/warner.jpg">
+                <p>DC Comics, Inc. is an American comic book publisher. It is the publishing unit of DC Entertainment,
+                     a subsidiary of the Warner Bros. Global Brands and Experiences division of Warner Bros.,
+                      a subsidiary of AT&T's Warner Media.
+                     As such is one of the largest global brands of our time!</p>
+                <h4>Warner Bros.</h4>
+                <h4>Motion pictures/entertainment company</h4>
+            </div>
+
+            <div class="per">
+                <img src="img/zack.webp">
+                <p>Zachary Edward Snyder is an American film director, producer, 
+                    screenwriter, and cinematographer. He made his feature film debut 
+                    in 2004 with Dawn of the Dead,
+                     a remake of the 1978 horror film of the same name.</p>
+                <h4>Zack Snyder</h4>
+                <h4>American film director</h4>
+                    
+            </div>
+
+            <div class="per">
+                <img src="img/james.jpg">
+                <p>James Francis Gunn Jr. is an American filmmaker and studio executive. 
+                    He began his career as a screenwriter in the mid-1990s, 
+                    starting at Troma Entertainment with Tromeo and Juliet.</p>
+                <h4>James Gunn</h4>
+                <h4>American Filmmaker</h4>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <p class="copyright">Managed and Created By DC Comics</p>
+        </footer>
+    </div>
+
+    <a href="#home" id="myBtn" title="Go to top"> TOP</a>
+    <script>
+        let mybutton  = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction(){
+            if(document.body.scrollTop > 20  || document.documentElement.scrollTop > 20){
+                mybutton.style.display ="block";
+            
+            } else {
+                mybutton.style.display = " none";
+            }
+        }
+       
+    </script>
+</body>
+</html>
